@@ -1,0 +1,19 @@
+{
+  "name": "first_backend",
+  "version": "1.0.0",
+  "description": "deploying first backend web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "first"
+  ],
+  "author": "Ejaz Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0"
+  }
+}
