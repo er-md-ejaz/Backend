@@ -19,11 +19,13 @@ function App() {
       <h1>Hello World</h1>
       <p>jokes:{jokes.length}</p>
       {
-        jokes.map((joke, index) => {
-          <div key={joke.id}>
-            <h4>{joke.setup}</h4>
-            <p>{joke.punchline}</p>
-          </div>
+        jokes.map((joke) => {
+          return (
+            <div key={joke.id}>
+              <h4>{joke.setup}</h4>
+              <p>{joke.punchline}</p>
+            </div>
+          )
         })
       }
     </>

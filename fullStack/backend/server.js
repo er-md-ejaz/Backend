@@ -6,7 +6,7 @@ app.get('/', (res, req) => {
     req.send('Frontend and Backend')
 })
 
-const port = process.env.PORT || 5000
+const port = 5000
 
 app.listen(port, () => {
     console.log(`serve at http://localhost:${port}`)
@@ -32,7 +32,7 @@ const jokes = [
 ]
 
 app.get('/api/jokes', (req, res) => {
-    res.json(jokes)
+    res.send(jokes)
 })
 // app.get('/jokes/:id', (req, res) => {
 //     const jokeId = parseInt(req.params.id, 10)
