@@ -31,7 +31,7 @@ const jokes = [
     }
 ]
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
     res.json(jokes)
 })
 // app.get('/jokes/:id', (req, res) => {
